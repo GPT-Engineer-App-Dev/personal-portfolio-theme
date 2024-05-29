@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Button, Input, Textarea } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Button, Input, Textarea, Image } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Index = () => {
@@ -37,6 +37,15 @@ const Index = () => {
           <Text fontSize="lg">
             Hello! I'm John Doe, a passionate web developer with a knack for creating stunning websites and applications. With a background in computer science and years of experience in the industry, I bring a unique blend of technical expertise and creative flair to every project I undertake.
           </Text>
+        </VStack>
+
+        {/* Important Items Section */}
+        <VStack id="important-items" spacing={4} align="start" mb={10}>
+          <Heading as="h2" size="md">Important Items</Heading>
+          <Text fontSize="lg">
+            This stopwatch holds a special place in my heart. It was a gift from my grandfather, who was a professional athlete. He used it during his training sessions and always emphasized the importance of time management and precision. This stopwatch reminds me to value every second and strive for excellence in everything I do.
+          </Text>
+          <Image src="/images/stopwatch.png" alt="Stopwatch" boxSize="200px" />
         </VStack>
 
         {/* Portfolio Section */}
